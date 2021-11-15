@@ -23,7 +23,6 @@ public class Main {
     }
 
     static void drawUpperPart(int nStr, int nSpace) {
-
         for (int i = 1; i <= nStr; i++) {
             for (int j = 0; j < i; j++)
                 System.out.print(" "); 
