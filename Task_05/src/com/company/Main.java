@@ -26,10 +26,10 @@ public class Main {
 
         for (int i = 1; i <= nStr; i++) {
             for (int j = 0; j < i; j++)
-                System.out.print(" "); //пробелы до
+                System.out.print(" "); 
             System.out.print("*");
             for (int j = 0; j < nSpace; j++)
-                System.out.print(" "); // пробелы внутри
+                System.out.print(" "); 
             System.out.println("*");
             nSpace -= 2;
         }
@@ -37,7 +37,7 @@ public class Main {
 
     static void drawMiddleStar(int n) {
         for (int j = 0; j < n / 2; j++)
-            System.out.print(" "); //пробелы до
+            System.out.print(" "); 
         System.out.println("*");
     }
 
@@ -45,10 +45,10 @@ public class Main {
         int nSpace = 1;
         for (int i = 1; i <= nStr; i++) {
             for (int j = 0; j < nStr - i + 1; j++)
-                System.out.print(" "); //пробелы до
+                System.out.print(" "); 
             System.out.print("*");
             for (int j = 0; j < nSpace; j++)
-                System.out.print(" "); // пробелы внутри
+                System.out.print(" "); 
             System.out.println("*");
             nSpace += 2;
         }
@@ -56,8 +56,8 @@ public class Main {
 
     public static void drawPicture(int n) {
         drawLine(n);
-        int nStr = (n - 2) / 2; // кол-во строк верхней (и нижней)части буквы Х
-        int nSpace = n - 4; //количество пробелов внутри в верхней строке
+        int nStr = (n - 2) / 2; 
+        int nSpace = n - 4; 
         drawUpperPart(nStr, nSpace);
         drawMiddleStar(n);
         drawLowerPart(nStr);
